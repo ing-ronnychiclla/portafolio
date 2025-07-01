@@ -35,7 +35,8 @@
 
     <section class="posts-section" id="posts">
         <h2 class="section-title">ÚLTIMOS POSTS</h2>
-
+        <!-- (Se omiten los artículos para resumir el contenido) -->
+         
         <div class="posts-grid">
             <article class="post-card fade-in-up">
                 <div class="post-image">
@@ -183,11 +184,11 @@
             </div>
         </aside>
     </section>
+    </section>
 
     <section class="info-section" id="about">
         <h2 class="section-title">SOBRE MÍ</h2>
-        <p>¡Hola! Soy el cerebro detrás de **Vice City Chronicles**. Mi pasión es explorar las fronteras del desarrollo web y las tecnologías emergentes, desde la inteligencia artificial hasta la realidad virtual en el navegador.</p>
-        <p>Con años de experiencia en el ecosistema digital, me dedico a compartir conocimientos, tutoriales y reflexiones sobre cómo construir el futuro de la web, un byte a la vez. ¡Únete a mí en esta aventura cyberpunk!</p>
+        <p>¡Hola! Soy el cerebro detrás de <strong>Vice City Chronicles</strong>. Mi pasión es explorar las fronteras del desarrollo web y las tecnologías emergentes.</p>
         <ul>
             <li><strong>Misión:</strong> Democratizar el conocimiento tech.</li>
             <li><strong>Visión:</strong> Inspirar la próxima generación de innovadores digitales.</li>
@@ -197,20 +198,15 @@
 
     <section class="info-section" id="contact">
         <h2 class="section-title">CONTACTO</h2>
-        <p>¿Tienes alguna pregunta, sugerencia o simplemente quieres saludar? ¡No dudes en contactarme!</p>
         <form class="contact-form" onsubmit="handleContactFormSubmit(event)">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
-
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
             <label for="subject">Asunto:</label>
             <input type="text" id="subject" name="subject">
-
             <label for="message">Mensaje:</label>
             <textarea id="message" name="message" required></textarea>
-
             <button type="submit">Enviar Mensaje</button>
         </form>
     </section>
@@ -224,11 +220,10 @@
                 <a href="#" class="social-link">📧</a>
             </div>
             <p>&copy; 2025 ronnychiclla.24@gmail.com. Todos los derechos reservados.</p>
-            <p>Desarrollado con ❤️ y mucho ☕ en el futuro digital</p>
         </div>
     </footer>
 
-    <div class="lightbox" id="lightbox">
+    <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
         <div class="lightbox-content">
             <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
             <img id="lightbox-img" src="" alt="">
@@ -237,6 +232,6 @@
 
     <button class="dark-mode-toggle" onclick="toggleTheme()">🌙</button>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
