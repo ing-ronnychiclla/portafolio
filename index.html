@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog Personal</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="grid-bg"></div>
+    </div>
+
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">ING. RONNY CHICLLA</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#posts" class="nav-link">Posts</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">INGENIERO DE SOFTWARE</h1>
+            <p class="hero-subtitle">Explorando el futuro digital, una línea de código a la vez</p>
+            <a href="#posts" class="cta-button">EXPLORA EL CÓDIGO</a>
+        </div>
+    </section>
+
+    <section class="posts-section" id="posts">
+        <h2 class="section-title">ÚLTIMOS POSTS</h2>
+
+        <div class="posts-grid">
+            <article class="post-card fade-in-up">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=500&h=300&fit=crop"
+                         alt="Desarrollo Web Futurista"
+                         class="lazy-image"
+                         loading="lazy">
+                    <div class="loading-spinner"></div>
+                    <div class="image-overlay">
+                        <div class="image-info">Click para ampliar</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">El Futuro del Desarrollo Web</h3>
+                    <p class="post-excerpt">
+                        Exploramos las últimas tendencias en desarrollo web, desde WebAssembly hasta
+                        las nuevas funcionalidades de CSS que están revolucionando el diseño.
+                    </p>
+                    <div class="post-meta">
+                        <span>15 Jun 2025</span>
+                        <a href="#" class="read-more">LEER MÁS →</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-card fade-in-up">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&h=300&fit=crop"
+                         alt="Inteligencia Artificial"
+                         class="lazy-image"
+                         loading="lazy">
+                    <div class="loading-spinner"></div>
+                    <div class="image-overlay">
+                        <div class="image-info">IA y Creatividad</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">IA y Creatividad Digital</h3>
+                    <p class="post-excerpt">
+                        Cómo la inteligencia artificial está transformando el proceso creativo
+                        y qué significa esto para los desarrolladores del futuro.
+                    </p>
+                    <div class="post-meta">
+                        <span>12 Jun 2025</span>
+                        <a href="#" class="read-more">LEER MÁS →</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-card fade-in-up">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop"
+                         alt="Performance Web"
+                         class="lazy-image"
+                         loading="lazy">
+                    <div class="loading-spinner"></div>
+                    <div class="image-overlay">
+                        <div class="image-info">Velocidad Extrema</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Performance Web Extrema</h3>
+                    <p class="post-excerpt">
+                        Técnicas avanzadas de optimización que llevarán tu sitio web a velocidades
+                        que no creías posibles. Core Web Vitals y más.
+                    </p>
+                    <div class="post-meta">
+                        <span>10 Jun 2025</span>
+                        <a href="#" class="read-more">LEER MÁS →</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-card fade-in-up">
+                <div class="post-image">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&h=300&fit=crop"
+                         alt="Desarrollo de Juegos"
+                         class="lazy-image"
+                         loading="lazy">
+                    <div class="loading-spinner"></div>
+                    <div class="image-overlay">
+                        <div class="image-info">Gaming Web</div>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <h3 class="post-title">Desarrollo de Juegos Web</h3>
+                    <p class="post-excerpt">
+                        Desde Three.js hasta WebGL, exploramos cómo crear experiencias de juego
+                        inmersivas directamente en el navegador.
+                    </p>
+                    <div class="post-meta">
+                        <span>08 Jun 2025</span>
+                        <a href="#" class="read-more">LEER MÁS →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <section class="featured-gallery">
+            <h3 class="section-title">Galería Destacada</h3>
+            <div class="image-gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=300&h=300&fit=crop"
+                         alt="Código en pantalla"
+                         class="lazy-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=300&fit=crop"
+                         alt="Desarrollo web"
+                         class="lazy-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?w=300&h=300&fit=crop"
+                         alt="Programación"
+                         class="lazy-image">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=300&h=300&fit=crop"
+                         alt="Tecnología"
+                         class="lazy-image">
+                </div>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h3 class="sidebar-title">Categorías</h3>
+                <ul class="widget-list">
+                    <li><a href="#">Desarrollo Web</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">CSS Avanzado</a></li>
+                    <li><a href="#">Frameworks</a></li>
+                    <li><a href="#">Gaming</a></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3 class="sidebar-title">Posts Populares</h3>
+                <ul class="widget-list">
+                    <li><a href="#">Guía Completa de React 18</a></li>
+                    <li><a href="#">CSS Grid vs Flexbox 2025</a></li>
+                    <li><a href="#">Node.js Performance Tips</a></li>
+                    <li><a href="#">TypeScript para Principiantes</a></li>
+                </ul>
+            </div>
+        </aside>
+    </section>
+
+    <section class="info-section" id="about">
+        <h2 class="section-title">SOBRE MÍ</h2>
+        <p>¡Hola! Soy el cerebro detrás de **Vice City Chronicles**. Mi pasión es explorar las fronteras del desarrollo web y las tecnologías emergentes, desde la inteligencia artificial hasta la realidad virtual en el navegador.</p>
+        <p>Con años de experiencia en el ecosistema digital, me dedico a compartir conocimientos, tutoriales y reflexiones sobre cómo construir el futuro de la web, un byte a la vez. ¡Únete a mí en esta aventura cyberpunk!</p>
+        <ul>
+            <li><strong>Misión:</strong> Democratizar el conocimiento tech.</li>
+            <li><strong>Visión:</strong> Inspirar la próxima generación de innovadores digitales.</li>
+            <li><strong>Tecnologías favoritas:</strong> JavaScript (React, Node.js), Python, WebGL, IA/ML.</li>
+        </ul>
+    </section>
+
+    <section class="info-section" id="contact">
+        <h2 class="section-title">CONTACTO</h2>
+        <p>¿Tienes alguna pregunta, sugerencia o simplemente quieres saludar? ¡No dudes en contactarme!</p>
+        <form class="contact-form" onsubmit="handleContactFormSubmit(event)">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link">📱</a>
+                <a href="#" class="social-link">💼</a>
+                <a href="#" class="social-link">🐦</a>
+                <a href="#" class="social-link">📧</a>
+            </div>
+            <p>&copy; 2025 Vice City Chronicles. Todos los derechos reservados.</p>
+            <p>Desarrollado con ❤️ y mucho ☕ en el futuro digital</p>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <img id="lightbox-img" src="" alt="">
+        </div>
+    </div>
+
+    <button class="dark-mode-toggle" onclick="toggleTheme()">🌙</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
