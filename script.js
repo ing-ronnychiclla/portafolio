@@ -159,22 +159,36 @@
             }
         }
 
-        function handleContactFormSubmit(event) {
-            event.preventDefault();
-            const form = event.target;
-            const name = form.name.value.trim();
-            const email = form.email.value.trim();
-            const subject = form.subject.value.trim();
-            const message = form.message.value.trim();
-            if (!name || !email || !message) {
-                alert("Por favor, completa todos los campos requeridos.");
-                return;
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const form = e.target;
+        const submitBtn = document.getElementById('submitBtn');
+        const messageDiv = document.getElementById('message');
+        
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Enviando...';
+        
+        try {
+            const response = await fetch('https://formspree.io/f/xgvydpnn', {
+                method: 'POST',
+                headers: { 'Accept': 'application/json' },
+                body: new FormData(form)
+            });
+            
+            if (response.ok) {
+                messageDiv.innerHTML = '¡Mensaje enviado correctamente!';
+                messageDiv.style.color = 'green';
+                form.reset();
+            } else {
+                throw new Error('Error');
             }
-            console.log("Formulario de contacto enviado:");
-            console.log(`Nombre: ${name}`);
-            console.log(`Email: ${email}`);
-            console.log(`Asunto: ${subject}`);
-            console.log(`Mensaje: ${message}`);
-            alert("¡Mensaje enviado con éxito! Te responderé pronto.");
-            form.reset();
+        } catch (error) {
+            messageDiv.innerHTML = 'Error al enviar. Intenta nuevamente.';
+            messageDiv.style.color = 'red';
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Enviar Mensaje';
+            messageDiv.style.display = 'block';
         }
+        });

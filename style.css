@@ -1,4 +1,4 @@
-/* ===== VARIABLES CSS PARA TEMA GTA VI ===== */
+
 :root {
     --primary-neon: #ff0080;
     --secondary-neon: #00ffff;
@@ -11,14 +11,12 @@
     --gradient-dark: linear-gradient(135deg, #1a1a1a, #2a1a2a, #1a2a2a);
     --box-shadow-neon: 0 0 20px rgba(255, 0, 128, 0.3);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    
-    /* Responsive variables */
     --container-padding: clamp(1rem, 4vw, 2rem);
     --section-padding: clamp(4rem, 8vw, 8rem);
     --header-height: clamp(60px, 8vw, 80px);
 }
 
-/* Dark mode adjustments */
+
 body.dark-mode {
     --dark-bg: #0a0a0a;
     --dark-card: #1a1a1a;
@@ -41,7 +39,7 @@ body.light-mode {
     --gradient-dark: linear-gradient(135deg, #f0f0f0, #e8e8e8, #f0f0f0);
 }
 
-/* ===== RESET Y BASE STYLES ===== */
+
 * {
     margin: 0;
     padding: 0;
@@ -58,7 +56,7 @@ body {
     font-size: clamp(14px, 1.5vw, 16px);
 }
 
-/* ===== FONDO ANIMADO ESTILO CYBERPUNK ===== */
+
 .background-animation {
     position: fixed;
     top: 0;
@@ -99,7 +97,7 @@ body {
     50% { transform: translateY(-100px) rotate(180deg); opacity: 1; }
 }
 
-/* ===== HEADER RESPONSIVE CON EFECTO NEON ===== */
+
 .header {
     position: fixed;
     top: 0;
@@ -127,7 +125,7 @@ body.light-mode .header {
     height: 100%;
 }
 
-/* Logo responsive */
+
 .logo {
     font-family: 'Orbitron', sans-serif;
     font-size: clamp(1.2rem, 4vw, 2rem);
@@ -145,7 +143,7 @@ body.light-mode .header {
     to { filter: drop-shadow(0 0 20px rgba(255, 0, 128, 0.8)); }
 }
 
-/* Navegación responsive */
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -185,7 +183,7 @@ body.light-mode .header {
     width: 80%;
 }
 
-/* Menú hamburguesa para móvil */
+
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -215,7 +213,7 @@ body.light-mode .header {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* ===== SECCIÓN HERO RESPONSIVE ===== */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -307,7 +305,7 @@ body.light-mode .header {
     box-shadow: var(--box-shadow-neon);
 }
 
-/* ===== SECCIÓN DE POSTS RESPONSIVE ===== */
+
 .posts-section {
     padding: var(--section-padding) var(--container-padding);
     max-width: 1400px;
@@ -338,7 +336,7 @@ body.light-mode .header {
     margin-bottom: 2rem;
 }
 
-/* Cards responsive */
+
 .post-card {
     background: var(--dark-card);
     border-radius: 15px;
@@ -449,7 +447,6 @@ body.light-mode .header {
     100% { top: 100%; }
 }
 
-/* ===== LIGHTBOX RESPONSIVE ===== */
 .lightbox {
     display: none;
     position: fixed;
@@ -513,7 +510,6 @@ body.light-mode .header {
     transform: scale(1.1);
 }
 
-/* ===== GALERÍA RESPONSIVE ===== */
 .image-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
@@ -541,7 +537,7 @@ body.light-mode .header {
     object-fit: cover;
 }
 
-/* ===== LAZY LOADING RESPONSIVE ===== */
+
 .lazy-image {
     opacity: 0;
     transition: opacity 0.3s;
@@ -658,7 +654,7 @@ body.light-mode .header {
     padding-left: 10px;
 }
 
-/* ===== INFO SECTION RESPONSIVE ===== */
+
 .info-section {
     padding: var(--section-padding) var(--container-padding);
     max-width: 1000px;
@@ -695,7 +691,7 @@ body.light-mode .header {
     color: var(--primary-neon);
 }
 
-/* ===== FORM RESPONSIVE ===== */
+
 .contact-form {
     background: var(--dark-card);
     border-radius: 15px;
@@ -765,7 +761,7 @@ body.light-mode .header {
     box-shadow: 0 10px 20px rgba(255, 0, 128, 0.4);
 }
 
-/* ===== FOOTER RESPONSIVE ===== */
+
 .footer {
     background: var(--dark-card);
     padding: clamp(2rem, 6vw, 4rem) var(--container-padding) clamp(1rem, 3vw, 2rem);
@@ -806,7 +802,7 @@ body.light-mode .header {
     box-shadow: var(--box-shadow-neon);
 }
 
-/* ===== MODO OSCURO TOGGLE RESPONSIVE ===== */
+
 .dark-mode-toggle {
     position: fixed;
     bottom: clamp(15px, 3vw, 20px);
@@ -831,9 +827,9 @@ body.light-mode .header {
     box-shadow: var(--box-shadow-neon);
 }
 
-/* ===== BREAKPOINTS ESPECÍFICOS ===== */
 
-/* Extra pequeño (teléfonos en vertical) */
+
+
 @media (max-width: 480px) {
     .nav-menu {
         display: none;
@@ -862,7 +858,7 @@ body.light-mode .header {
     }
 }
 
-/* Pequeño (teléfonos en horizontal) */
+
 @media (min-width: 481px) and (max-width: 768px) {
     .posts-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -873,7 +869,7 @@ body.light-mode .header {
     }
 }
 
-/* Mediano (tablets) */
+
 @media (min-width: 769px) and (max-width: 992px) {
     .posts-section {
         grid-template-columns: 1fr;
@@ -889,7 +885,7 @@ body.light-mode .header {
     }
 }
 
-/* Grande (laptops y desktops) */
+
 @media (min-width: 993px) {
     .posts-section {
         grid-template-columns: 2fr 1fr;
@@ -903,7 +899,7 @@ body.light-mode .header {
     }
 }
 
-/* ===== ANIMACIONES ADICIONALES OPCIONALES ===== */
+
 @keyframes neonPulse {
     0%, 100% {
         box-shadow: 0 0 5px var(--primary-neon),

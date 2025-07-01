@@ -35,7 +35,6 @@
 
     <section class="posts-section" id="posts">
         <h2 class="section-title">ÚLTIMOS POSTS</h2>
-        <!-- (Se omiten los artículos para resumir el contenido) -->
          
         <div class="posts-grid">
             <article class="post-card fade-in-up">
@@ -196,20 +195,23 @@
         </ul>
     </section>
 
-    <section class="info-section" id="contact">
-        <h2 class="section-title">CONTACTO</h2>
-        <form class="contact-form" onsubmit="handleContactFormSubmit(event)">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="subject">Asunto:</label>
-            <input type="text" id="subject" name="subject">
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Enviar Mensaje</button>
-        </form>
-    </section>
+   <form class="contact-form" id="contactForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
+        
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject">
+        
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit" id="submitBtn">Enviar Mensaje</button>
+    </form>
+
+<div id="message" class="message"></div>
 
     <footer class="footer">
         <div class="footer-content">
